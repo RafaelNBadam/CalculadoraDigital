@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Digital</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="backgroundCalculadora">
+        <div class="calculadora">
+            <div class="inputEResultado">
+                <p id="equacao"></p>
+                    <input type="text" id="inputCalculo">
+            </div>
+            <br>
+        <table>
+            <tr>
+            <td class="botoes" id="apag" colspan="2"><button style="width: 121px;" onclick="limpar()">C</button></td>
+            <td class="botoes" id="del"><button onclick="delUltimo()">DEL</button></td>
+            <td class="botoes"><button onclick="calcular('+')">+</button></td>
+            </tr>
+            <tr>
+            <td class="botoes"><button onclick="calcular('7')">7</button></td>
+            <td class="botoes"><button onclick="calcular('8')">8</button></td>
+            <td class="botoes"><button onclick="calcular('9')">9</button></td>
+            <td class="botoes"><button onclick="calcular('-')">-</button></td>
+            </tr>
+            <tr>
+            <td class="botoes"><button onclick="calcular('4')">4</button></td>
+            <td class="botoes"><button onclick="calcular('5')">5</button></td>
+            <td class="botoes"><button onclick="calcular('6')">6</button></td>
+            <td class="botoes"><button onclick="calcular('*')">*</button></td>
+            </tr>
+            <td class="botoes"><button onclick="calcular('1')">1</button></td>
+            <td class="botoes"><button onclick="calcular('2')">2</button></td>
+            <td class="botoes"><button onclick="calcular('3')">3</button></td>
+            <td class="botoes"><button onclick="calcular('/')">/</button></td>
+            <tr>
+            <td class="botoes"><button onclick="calcular('0')">0</button></td>
+            <td class="botoes"><button onclick="calcular('.')">.</button></td>
+            <td class="botoes" id="result" colspan="2"><button style="width: 121px;" onclick="resultado('=')">=</button></td>
+            </tr>
+        </table>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
